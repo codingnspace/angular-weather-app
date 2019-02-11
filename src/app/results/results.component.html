@@ -1,0 +1,13 @@
+<div class="result-list" *ngIf="results">
+  <h2>Your Results Are In...</h2>
+  <div class="result" *ngFor="let result of results">
+    <div class='result-day-text'>{{result.day}}</div>
+    <div class='result-img'>
+      <img *ngIf="result.decision === 'bike'" src='../../assets/bike.svg' />
+      <img *ngIf="result.decision === 'metro'" src='../../assets/metro.svg' />
+    </div>
+  </div>
+  <div class="btn-wrapper">
+    <button (click)="onSubmit()">Start Over</button>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+<div class="weather-form-container" *ngIf="!results">
+  <h2>Put In Your Conditions</h2>
+  <form (ngSubmit)="onSubmit()" class="weather-form">
+      <div class="input-with-icon">
+        <input [(ngModel)]="model.minTemp" placeholder="Min Temp" name="minTemp" />
+        <img class="app-logzzo" src="../../assets/temperature.svg" alt="app-logo" />
+      </div>
+      <div class="input-with-icon">
+        <input [(ngModel)]="model.maxTemp" placeholder="Max Temp" name="maxTemp" />
+        <img class="app-logzzo" src="../../assets/temperature.svg" alt="app-logo" />
+      </div>
+      <div class="input-with-icon">
+        <input [(ngModel)]="model.maxRain" placeholder="Max Rain Percentage" name="maxRain" />
+        <img class="app-logzzo" src="../../assets/percentage.svg" alt="app-logo" />
+      </div>
+      <div class="btn-wrapper">
+        <button type="submit">Get Info</button>
+      </div>
+  </form>
+</div>
+<app-results [results]="results"></app-results>

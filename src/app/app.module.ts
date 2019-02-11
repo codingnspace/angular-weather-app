@@ -8,15 +8,13 @@ import { HeaderComponent } from './header/header.component';
 import { WeatherFormComponent } from './weather-form/weather-form.component';
 import { WeatherService } from './weather.service';
 import { ResultsComponent } from './results/results.component';
-import { DisplaySwitcherComponent } from './display-switcher/display-switcher.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     WeatherFormComponent,
-    ResultsComponent,
-    DisplaySwitcherComponent
+    ResultsComponent
   ],
   imports: [
     BrowserModule,

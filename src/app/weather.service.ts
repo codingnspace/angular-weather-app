@@ -13,8 +13,8 @@ const httpOptions = {
 })
 
 export class WeatherService {
-  longitude: number = 38.9072;
-  latitude: number = 77.0369;
+  latitude: number = 38.9072;
+  longitude: number = 77.0369;
   weatherUrl: string = `https://1miudhz7a9.execute-api.us-east-1.amazonaws.com/dev/forecast/${this.latitude},${this.longitude}`;
 
 
